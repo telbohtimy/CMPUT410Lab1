@@ -1,0 +1,71 @@
+–
+Make some request(s) for some arbitrary web site.
+–
+Save your samples as well as their responses in a new file in your
+repository
+curl http://simplebits.com
+...
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8023335-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- c(~) -->
+</body>
+</html>
+
+
+curl --request GET 'http://simplebits.com'
+....
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8023335-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- c(~) -->
+</body>
+</html>
+
+curl -X PUT -H 'Content-Type:application/json' -d '{"firstName":"Kris", "lastName":"Jordan"}' echo.httpkit.com 
+
+
+
+curl --request POST 'http://www.somedomain.com/''
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+curl --request DELETE 'http://www.somedomain.com/'
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+curl --request PUT 'http://www.somedomain.com/‘
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.7.6</center>
+</body>
+</html>
+
+
